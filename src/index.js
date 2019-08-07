@@ -449,7 +449,7 @@ export default class Carousel extends React.Component {
     if (this.touchObject.length > this.state.slideWidth / slidesToShow / 5) {
       if (this.props.slidesToScroll === 'auto') {
         this.setState({
-          slidesToShow: Math.ceil(
+          slidesToScroll: Math.ceil(
             this.touchObject.length / this.state.slideWidth
           )
         });
